@@ -1,38 +1,59 @@
-.App {
+
+body {
+  background-color: #faf7f7;
+  color: #111;
+}
+
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.card {
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 10px;
+  padding: 20px;
+  max-width: 300px; 
+  align-items: center;
+  justify-content: center;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+.card h3 {
+  font-size: max(15px, 1.5vw);
+  margin-bottom: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+
+.card p {
+  font-size:  max(12px, 1vw);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+.btn {
+  background-color: white;
+  border: 1px solid rgb(73, 120, 156);
+  
+  border-radius: 5px;
+  color: rgb(73, 120, 156);
+  cursor: pointer;
+  font-size:  max(15px, 1.2 vw);
+  margin-top: 10px;
+  padding: 10px 20px;
+  transition: background-color 0.3s ease;
+  min-width: 250px;
+  
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btn:hover {
+  background-color: #088393;
+  color: #f4f4f4;
 }
